@@ -17,7 +17,3 @@ jobs:
       run: ./configure
     - name: run
       run: ./build/github_action_test
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
