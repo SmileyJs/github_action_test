@@ -15,11 +15,8 @@ jobs:
     - uses: actions/checkout@v3
     - name: configure
       run: ./configure
-    - name: make
-      run: make
     - name: run
-      run: cd build
-      run: ./github_action_test
+      run: ./build/github_action_test
     - name: make check
       run: make check
     - name: make distcheck
